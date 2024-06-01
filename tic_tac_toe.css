@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-common {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Design-Start for home page */
+.start-outer-div {
+    height: 100vh;
+    width: 100%;
+    background: hotpink;
+}
+.start-inner-common {
+    width: 100%;
+    height: 18%;
+}
+.start-inner-div {
+    flex-direction: column;
+    height: 60vh;
+    width: 90vw;
+    max-width: 500px;
+}
+.player {
+    font-size: 1.5em;
+}
+.player-name {
+    height: 2.5em;
+    width: 15em;
+    max-width: 100%;
+    background: transparent;
+    border-radius: 25px;
+    padding-left: 14px;
+    font-size: 16px;
+}
+.start-btn {
+    align-self: flex-start;
+    height: 50%;
+    width: 35%;
+    border-radius: 25px;
+    font-size: 1em;
+}
+/* Design-End for home page */
+
+/* Design-Start for Winner page */
+.winner {
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    background: purple;
+}
+.disp-none {
+    display: none;
+}
+.para1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.para2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.new-game-btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+/* Design-End for Winner page */
+
+/* Design-Start for Game page */
+/* Game Heading */
+header {
+    height: 15vh;
+    background: #000;
+    color: white;
+    font-size: 2em;
+}
+
+/* Main Game part */
+main {
+    height: 85vh;
+}
+.main-div {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.outer {
+    height: 100%;
+    width: 90vw;
+    max-width: 500px;
+    flex-direction: column;
+}
+.box-common {
+    margin: 10px;
+    height: 20vw;
+    width: 20vw;
+    max-width: 140px;
+    max-height: 140px;
+    background: darkblue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    /* max-font-size: 90px; */
+    color: gold;
+    border: none;
+}
+
+.reset-div {
+    height: 20%;
+    width: 90vw;
+    max-width: 500px;
+}
+.reset-btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none;
+    background: #000;
+    color: white;
+}
+/* Design-End for Game page */
+.player-active {
+    position: absolute;
+}
+.color-gray {
+    color: gray;
+}
+.color-green {
+    color: rgb(28, 255, 28);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-common {
+        height: 25vw;
+        width: 25vw;
+        font-size: 7vw;
+    }
+}
+@media (max-width: 480px) {
+    .box-common {
+        height: 30vw;
+        width: 30vw;
+        font-size: 8vw;
+    }
+    .player {
+        font-size: 1.2em;
+    }
+    .player-name {
+        height: 2em;
+        font-size: 14px;
+    }
+    .start-btn {
+        width: 50%;
+        font-size: 0.8em;
+    }
+    .para1, .para2 {
+        font-size: 1.5em;
+    }
+}

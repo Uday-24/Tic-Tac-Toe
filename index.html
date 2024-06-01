@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="tic_tac_toe.css">
+</head>
+<body>
+    <div class="start-outer-div flex-common">
+        <div class="start-inner-div flex-common">
+            <div class="start-heading start-inner-common flex-common">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <div class="start-player-div start-inner-common flex-common">
+                <pre class="player">Player 1 </pre>
+                <input type="text" placeholder="Enter Name..." class="player-name player-1">
+            </div>
+            <div class="start-player-div start-inner-common flex-common">
+                <pre class="player">Player 2 </pre>
+                <input type="text" placeholder="Enter Name..." class="player-name player-2">
+            </div>
+            <div class="start-btn-div start-inner-common flex-common">
+                <button class="start-btn">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <div class="winner flex-common disp-none">
+        <p class="winner-msg para1">Congratulations -name-</p>
+        <p class="winner-msg para2">You are the winner</p>
+        <button class="new-game-btn">New Game</button>
+    </div>
+    <header class="flex-common disp-none">
+        <div class="game-heading">
+            <h1>Tic Tac Toe</h1>
+        </div>
+    </header>
+    <main class="disp-none">
+        <div class="player-active">
+            <p class="p-1 color-green">Player 1 : Uday : O</p>
+            <p class="p-2">Player 2 : Uday-2 : X</p>
+        </div>
+        <div class="main-div flex-common">
+            <div class="outer flex-common">
+                <div class="row1 row-common flex-common">
+                    <button class="box1 box-common"></button>
+                    <button class="box2 box-common"></button>
+                    <button class="box3 box-common"></button>
+                </div>
+                <div class="row2 row-common flex-common">
+                    <button class="box4 box-common"></button>
+                    <button class="box5 box-common"></button>
+                    <button class="box6 box-common"></button>
+                </div>
+                <div class="row3 row-common flex-common">
+                    <button class="box7 box-common"></button>
+                    <button class="box8 box-common"></button>
+                    <button class="box9 box-common"></button>
+                </div>
+            </div>
+            <div class="reset-div flex-common">
+                <div class="reset-btn-div">
+                    <button class="reset-btn">Reset Game</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="tic_tac_toe.js"></script>
+</body>
+</html>
